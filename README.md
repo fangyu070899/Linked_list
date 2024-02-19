@@ -6,6 +6,7 @@ Each element of a linked list is called a node, and every node has two different
 2. Next contains a reference to the next node on the list.
 
 A linked list is a collection of nodes. The first node is called the head, and it’s used as the starting point for any iteration through the list. The last node must have its next reference pointing to None to determine the end of the list. Here’s how it looks:
+
 ![image](https://hackmd.io/_uploads/SyE15de36.png)
 
 ## Complexity
