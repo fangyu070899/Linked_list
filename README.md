@@ -23,7 +23,7 @@ A linked list is a collection of nodes. The first node is called the head, and i
 
 ## References
 
-https://realpython.com/linked-lists-python/
-https://www.geeksforgeeks.org/python-linked-list/
-https://alrightchiu.github.io/SecondRound/linked-list-introjian-jie.html
-https://www.geeksforgeeks.org/time-and-space-complexity-of-linked-list/
+- https://realpython.com/linked-lists-python/
+- https://www.geeksforgeeks.org/python-linked-list/
+- https://alrightchiu.github.io/SecondRound/linked-list-introjian-jie.html
+- https://www.geeksforgeeks.org/time-and-space-complexity-of-linked-list/
