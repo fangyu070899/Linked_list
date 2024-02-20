@@ -82,22 +82,27 @@ class DoublyLinkedList:
     """
 
     def delete_first_node(self):
+        delete_node = self.head
+
         if self.head == None:
             return
         elif self.head.next == None:
             self.head = None
             self.tail = None
-        self.head.next.prev = None
-        self.head = self.head.next
+        else:
+            self.head.next.prev = None
+            self.head = self.head.next
 
     def delete_last_node(self):
+        delete_node = self.tail
         if self.tail == None:
             return
         elif self.tail.prev == None:
             self.head = None
             self.tail = None
-        self.tail.prev.next = None
-        self.tail = self.tail.prev
+        else:
+            self.tail.prev.next = None
+            self.tail = self.tail.prev
 
     def delete_by_index(self, index):
         if index == 0:
