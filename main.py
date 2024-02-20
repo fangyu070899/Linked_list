@@ -1,8 +1,13 @@
-from linked_list import LinkedList
+from singly_linked_list import SinglyLinkedList
+from doubly_linked_list import DoublyLinkedList
 
 if __name__ == '__main__':
+    """
+    SinglyLinkedList
+    """
+    print(f"------------ singly linked list ------------")
     # create a new linked list
-    llist = LinkedList()
+    llist = SinglyLinkedList()
 
     # add nodes to the linked list
     llist.insert_at_end('a')
@@ -33,3 +38,35 @@ if __name__ == '__main__':
 
     print("\nSize of linked list :", end=" ")
     print(llist.len_ll())
+
+    """
+    DoublyLinkedList
+    """
+    print(f"------------ doubly linked list ------------")
+    # create a new linked list
+    dllist = DoublyLinkedList()
+    # add nodes to the linked list
+    dllist.insert_at_end('a')
+    dllist.insert_at_end('b')
+    dllist.insert_at_begin('c')
+    dllist.insert_at_end('d')
+    dllist.insert_at_any_index('g', 2)
+
+    # print the linked list
+    print("Node Data")
+    dllist.print_dll()
+
+    # remove a nodes from the linked list
+    print("\nRemove First Node")
+    dllist.delete_first_node()
+    print("Remove Last Node")
+    dllist.delete_last_node()
+    print("Remove Node at Index 1")
+    dllist.delete_by_index(1)
+
+    # print the linked list again
+    print("\nLinked list after removing a node:")
+    dllist.print_dll()
+
+    print("\nSize of linked list :", end=" ")
+    print(dllist.get_length())
