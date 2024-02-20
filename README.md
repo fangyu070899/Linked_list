@@ -18,6 +18,7 @@ A doubly linked list has more efficient iteration, particularly if you need to e
 ## Circular Linked List
 
 The circular linked list is a linked list where all nodes are connected to form a circle. In a circular linked list, the first node and the last node are connected to each other which forms a circle. There is no NULL at the end.
+
 ![image](https://github.com/fangyu070899/Linked_list/blob/main/image/CircularLinkeList.png)
 
 ## Complexity
@@ -36,6 +37,7 @@ The circular linked list is a linked list where all nodes are connected to form 
 ## Linked List vs Array
 
 Array: Arrays store elements in contiguous memory locations, resulting in easily calculable addresses for the elements stored and this allows faster access to an element at a specific index.
+
 ![image](https://github.com/fangyu070899/Linked_list/blob/main/image/Arrays-1.png)
 
 Linked List: Linked lists are less rigid in their storage structure and elements are usually not stored in contiguous locations, hence they need to be stored with additional tags giving a reference to the next element.
