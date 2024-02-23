@@ -4,10 +4,6 @@
 #         self.val = val
 #         self.next = next
 
-"""
-還沒好
-"""
-
 
 class Solution:
     def swapPairs(self, head: Optional[ListNode]) -> Optional[ListNode]:
@@ -18,13 +14,16 @@ class Solution:
 
         current = head
         head = current.next
+        pre = None
         while True:
             if current == None or current.next == None:
                 return head
             else:
                 a = current
                 b = current.next
+                if pre != None:
+                    pre.next = b
                 a.next = b.next
                 b.next = a
-                pre = a
+                pre = current
                 current = a.next
